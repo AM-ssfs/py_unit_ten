@@ -21,3 +21,6 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+        if event.type == MOUSEBUTTONDOWN:
+            snow.draw_snowflake(pygame.mouse.get_pos())
+            pygame.display.update()
